@@ -1,4 +1,4 @@
 Scala-Sonar
 ===========================
 
-This is a simple programa in Scala language to test Scoverage Plugin for Sonar.
+Simple programm in Scala language to test Scoverage Plugin for Sonar.
