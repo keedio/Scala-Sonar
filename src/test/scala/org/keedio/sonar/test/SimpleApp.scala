@@ -11,7 +11,7 @@ object SimpleApp {
 
     def main(args : Array[String]) {
         println( "Hello World!" )
-        println("concat words = " + foo(Array("uno","dos","tres")))
+        println("concat words = " + foo(Array("uno","dos","tres", "cuatro")))
     }
 
 }
