@@ -1,4 +1,4 @@
-package org.keedio.sonar.test
+package org.keedio.sonar.scala
 
 /**
  * Created by luislazaro on 18/8/15.
