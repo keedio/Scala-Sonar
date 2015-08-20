@@ -1,15 +1,18 @@
 package org.keedio.sonar.scala
+
 import org.junit._
-import java.io.File
+
 /**
  * Created by luislazaro on 20/8/15.
  * lalazaro@keedio.com
  * Keedio
  */
-class TestReader {
+class SimpleAppTest {
 
     @Test
     def test1: Unit = {
-        Reader.recursiveListFiles(new File("src/test/resources")).foreach(file => println(file.getName))
+        val array : Array[String] = Array("hola", "adios")
+        assert(SimpleApp.foo(array).equals("holaadios"), "Strings are not equals")
+
     }
 }
