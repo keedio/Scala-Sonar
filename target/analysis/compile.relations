@@ -1,0 +1,13 @@
+products:
+   src/main/scala/org/keedio/sonar/scala/SimpleApp.scala -> target/classes/org/keedio/sonar/scala/SimpleApp$$anonfun$foo$1.class
+   src/main/scala/org/keedio/sonar/scala/SimpleApp.scala -> target/classes/org/keedio/sonar/scala/SimpleApp$.class
+   src/main/scala/org/keedio/sonar/scala/SimpleApp.scala -> target/classes/org/keedio/sonar/scala/SimpleApp.class
+binary dependencies:
+   src/main/scala/org/keedio/sonar/scala/SimpleApp.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/rt.jar
+   src/main/scala/org/keedio/sonar/scala/SimpleApp.scala -> /Users/luislazaro/.m2/repository/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4.jar
+source dependencies:
+external dependencies:
+class names:
+   src/main/scala/org/keedio/sonar/scala/SimpleApp.scala -> org.keedio.sonar.scala.SimpleApp
+   src/main/scala/org/keedio/sonar/scala/SimpleApp.scala -> org.keedio.sonar.scala.SimpleApp$
+   src/main/scala/org/keedio/sonar/scala/SimpleApp.scala -> org.keedio.sonar.scala.SimpleApp$$anonfun$foo$1
