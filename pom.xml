@@ -4,9 +4,7 @@
     <groupId>org.keedio.sonar.test</groupId>
     <artifactId>Scala-Sonar</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>${project.artifactId}</name>
-    <description>My wonderfull scala app</description>
-    <inceptionYear>2010</inceptionYear>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.7</maven.compiler.source>
@@ -40,17 +38,12 @@
         </plugins>
     </reporting>
     <build>
-
         <plugins>
-
             <plugin>
                 <groupId>org.scoverage</groupId>
                 <artifactId>scoverage-maven-plugin</artifactId>
                 <version>1.1.1</version>
-
             </plugin>
-
-
             <plugin>
                 <groupId>net.alchim31.maven</groupId>
                 <artifactId>scala-maven-plugin</artifactId>
@@ -64,31 +57,11 @@
                         <javacArg>-Xlint:deprecation</javacArg>
                     </javacArgs>
                 </configuration>
-                <executions>
-                    <execution>
-                        <id>scala-compile-first</id>
-                        <phase>process-resources</phase>
-                        <goals>
-                            <goal>add-source</goal>
-                            <goal>compile</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>scala-test-compile</id>
-                        <phase>process-test-resources</phase>
-                        <goals>
-                            <goal>testCompile</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
                 <version>2.3</version>
-                <configuration>
-                    <!-- put your configurations here -->
-                </configuration>
                 <executions>
                     <execution>
                         <phase>package</phase>
@@ -100,9 +73,13 @@
             </plugin>
         </plugins>
     </build>
-
     <dependencies>
-
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>${scala.version}</version>
+            <scope>provided</scope>
+        </dependency>
         <dependency>
             <groupId>com.typesafe.scala-logging</groupId>
             <artifactId>scala-logging-slf4j_2.10</artifactId>
@@ -115,27 +92,10 @@
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <version>1.1.2</version>
-        </dependency>
-        <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
         <version>${junit.version}</version>
         <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>6.1.1</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.scalatest</groupId>
-            <artifactId>scalatest-maven-plugin</artifactId>
-            <version>1.0</version>
         </dependency>
     </dependencies>
 </project>
