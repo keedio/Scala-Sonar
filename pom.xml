@@ -14,20 +14,6 @@
         <scala.version>2.10.4</scala.version>
         <junit.version>4.11</junit.version>
     </properties>
-
-
-    <reporting>
-        <plugins>
-            <plugin>
-                <groupId>org.scoverage</groupId>
-                <artifactId>scoverage-maven-plugin</artifactId>
-                <version>1.1.1</version>
-                <configuration>
-                    <aggregate>true</aggregate>
-                </configuration>
-            </plugin>
-        </plugins>
-    </reporting>
     <build>
         <plugins>
             <plugin>

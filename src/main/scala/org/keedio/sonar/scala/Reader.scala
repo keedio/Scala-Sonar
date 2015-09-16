@@ -1,7 +1,7 @@
 package org.keedio.sonar.scala
 
 /**
- * Copyright 2015 Keedio
+ // Copyright 2015 Keedio
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
